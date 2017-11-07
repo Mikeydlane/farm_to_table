@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-md navbar-light bg-secondary">
+  <a class="navbar-brand text-white" href="#">Farm 2 Table</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <% if current_user.nil? %>
+      <li class="nav-item">
+        <%= link_to "Login", login_path, class: 'nav-link text-white' %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Create Account", login_path, class: 'nav-link text-white' %>
+      </li>
+      <% else %>
+        <% if current_user.user_type == 'Farm' %>
+          <li class="nav-item">
+            <%= link_to "Add Product", '#', class: 'nav-link text-white' %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "My Products", '#', class: 'nav-link text-white' %>
+          </li>
+        <% end %>
+
+      <li class="nav-item">
+        <%= link_to "Logout", logout_path, class: 'nav-link text-white' %>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+</nav>

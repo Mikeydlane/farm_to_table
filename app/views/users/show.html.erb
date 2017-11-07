@@ -1,9 +1,5 @@
 <% if @user.user_type == 'Farm' %>
-  <h1><%= @user.email %> <small>Farm</small></h1>
-  <h3><%= @user.city %></h3>
-  <h5><%= @user.description %></h5>
+  <%= render partial: 'farm' %>
 <% else %>
-  <h1><%= @user.email %> <small>Table</small></h1>
-  <h3><%= @user.city %></h3>
-  <h5><%= @user.description %></h5>
+  <%= render partial: 'table' %>
 <% end %>

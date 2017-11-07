@@ -17,6 +17,7 @@ class UsersController < ApplicationController
   end
 
   def show
+    require_user
   end
 
   private
@@ -27,5 +28,11 @@ class UsersController < ApplicationController
 
   def set_user
     @user = User.find(params[:id])
+  end
+
+  def require_user
+    if current_user
+      redirect_to current_user unless current_user.id == params[:id].to_i
+    end
   end
 end
