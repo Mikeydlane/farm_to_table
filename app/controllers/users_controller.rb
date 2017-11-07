@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show]
+  before_action :set_user, :require_user,  only: [:show, :edit, :update]
 
   def new
     @user = User.new
@@ -17,22 +17,27 @@ class UsersController < ApplicationController
   end
 
   def show
-    require_user
+  end
+
+  def edit
+  end
+
+  def update
+    if @user.update(user_params)
+      redirect_to @user
+    else
+      flash.now[:error] = "S my D from B"
+      render :edit
+    end
   end
 
   private
 
   def user_params
-    params.require(:user).permit([:email, :password, :city, :user_type, :description])
+    params.require(:user).permit([:name, :email, :password, :city, :user_type, :description])
   end
 
   def set_user
     @user = User.find(params[:id])
-  end
-
-  def require_user
-    if current_user
-      redirect_to current_user unless current_user.id == params[:id].to_i
-    end
   end
 end
