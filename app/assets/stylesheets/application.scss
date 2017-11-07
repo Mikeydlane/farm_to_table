@@ -14,6 +14,30 @@
  *= require_self
  */
 
+body {
+  background-color: #eaeff5 !important;
+  height: 100vh;
+}
+
+.card {
+  background-color: #fff;
+  padding: 30px;
+  margin: 0 auto;
+  box-shadow: 1px 1px 4px rgba(50,50,50,0.2  );
+}
+
+nav {
+  font-family: 'Raleway', sans-serif;
+  background-color: #499452 !important;
+
+  .navbar-brand {
+    font-weight: 900;
+    letter-spacing: -0.4px;
+    font-size: 26px;
+  }
+}
+
 .main {
+  font-family: 'Raleway', sans-serif;
   margin-top: 25px;
 }

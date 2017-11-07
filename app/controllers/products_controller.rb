@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-  before_action :set_product, only: [:destroy, :edit, :update]
+  before_action :set_product, only: [:destroy, :edit, :update, :show]
 
   def index
     @products = current_user.products
@@ -7,6 +7,9 @@ class ProductsController < ApplicationController
 
   def new
     @product = current_user.products.new
+  end
+
+  def show
   end
 
   def create
@@ -22,7 +25,7 @@ class ProductsController < ApplicationController
   def edit
   end
 
-  def create
+  def update
     if @product.update(product_params)
       redirect_to products_path
     else
