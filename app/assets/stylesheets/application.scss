@@ -19,11 +19,62 @@ body {
   height: 100vh;
 }
 
+.home {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 50vh;
+}
+
+.hero-img {
+  background-image: asset-url('vineyard-bg.JPG');
+  height: 100vh;
+  position: fixed;
+  top: 65px;
+  width: 100vw;
+  left: 0;
+  opacity: 0.6;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .card {
   background-color: #fff;
   padding: 30px;
   margin: 0 auto;
-  box-shadow: 1px 1px 4px rgba(50,50,50,0.2  );
+  box-shadow: 1px 1px 4px rgba(50,50,50,0.4);
+  width: 800px;
+}
+
+.new-user-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 800px;
+  .btn {
+    z-index: 100;
+    opacity: 1 !important;
+    padding: 40px 80px !important;
+    font-size: 175%;
+    font-weight: bold;
+  }
+  .btn-success {
+    background-color: darken(#28a745, 20%) !important;
+    border-color: darken(#28a745, 20%) !important;
+    &:hover {
+      background-color: darken(#28a745, 10%) !important;
+    }
+  }
+  .btn-info {
+    background-color: darken(rgb(23, 162, 184), 20%) !important;
+    border-color: darken(rgb(23, 162, 184), 20%) !important;
+    &:hover {
+      background-color: darken(rgb(23, 162, 184), 10%) !important;
+    }
+  }
 }
 
 nav {

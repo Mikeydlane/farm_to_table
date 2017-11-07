@@ -1,5 +1,16 @@
-<div class="card">
-  <h4>
-    Welcome! please sign in or create an account.
-  </h4>
+<div class="home">
+  <div class="hero-img"></div>
+  <div class="card">
+    <h4>
+      Connecting the finest restaurants to local farmers providing the freshest, in-season produce available.
+    </h4>
+    <p>
+      Select a option below to get started
+    </p>
+  </div>
+
+  <div class="new-user-btns">
+    <%= link_to 'Farm', new_user_path(user_type: 'Farm'), class: 'btn btn-info' %>
+    <%= link_to 'Table', new_user_path(user_type: 'Table'), class: 'btn btn-success' %>
+  </div>
 </div>

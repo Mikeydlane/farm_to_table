@@ -5,7 +5,7 @@ class CreateUsers < ActiveRecord::Migration[5.1]
       t.string :password_digest
       t.string :city
       t.text :description
-      t.string :user_type
+      t.string :user_type, default: 'Table'
 
       t.timestamps
     end

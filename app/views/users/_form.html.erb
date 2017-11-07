@@ -19,10 +19,7 @@
     <%= f.text_field :city %>
   </p>
 
-  <p>
-    <%= f.label :user_type, 'Type' %>
-    <%= f.select :user_type, ['Farm', 'Table'], include_blank: true %>
-  </p>
+  <%= f.hidden_field :user_type, value: params[:user_type] %>
 
   <p>
     <%= f.label :description %>
