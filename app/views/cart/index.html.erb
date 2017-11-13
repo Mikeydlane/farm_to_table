@@ -1,0 +1,28 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Product</th>
+      <th>Farm</th>
+      <th>Quantity</th>
+      <th>Price</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <% @cart.each do |product_id, quantity| %>
+      <% product = Product.find(product_id) %>
+      <tr>
+        <td>
+          <%= image_tag product.image, class: "img" %>
+          <%= link_to product.name, product_path(product) %>
+        </td>
+        <td><%= link_to product.user.name, farmer_path(product.user) %></td>
+        <td><%= quantity %></td>
+        <td><%= number_to_currency(product.price * quantity) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+<p>Total: <%= number_to_currency cart_total %></p>
