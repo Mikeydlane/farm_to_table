@@ -1,3 +1,4 @@
+
 <% if current_user.products.include?(@product) %>
   <%= link_to 'Back', products_path, class: 'btn btn-info' %>
   <div class="float-right">
@@ -6,6 +7,7 @@
   </div>
   <hr>
 <% end %>
+
 <h3><%= @product.name %></h3>
 <h5><%= number_to_currency @product.price %></h5>
 <%= image_tag @product.image if @product.image.present? %>

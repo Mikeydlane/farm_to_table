@@ -1,4 +1,4 @@
-<%= form_for :session, method: :post, class: "login" do |f| %>
+<div class="form"><%= form_for :session, method: :post, class: "login" do |f| %>
   <p>
     <%= f.label :email %>
     <%= f.text_field :email %>
@@ -10,3 +10,4 @@
   </p>
   <%= f.submit "Login" %>
 <% end %>
+</div>

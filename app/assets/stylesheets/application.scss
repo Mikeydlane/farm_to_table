@@ -15,7 +15,7 @@
  */
 
 body {
-  background-color: #eaeff5 !important;
+/*  background-color: #eaeff5 !important;*/
   height: 100vh;
 }
 
@@ -27,25 +27,8 @@ body {
   justify-content: space-around;
   height: 50vh;
 }
-
-.hero-img {
-  background-image: asset-url('vineyard-bg.JPG');
-  height: 100vh;
-  position: fixed;
-  top: 65px;
-  width: 100vw;
-  left: 0;
-  opacity: 0.6;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.card {
-  background-color: #fff;
-  padding: 30px;
-  margin: 0 auto;
-  box-shadow: 1px 1px 4px rgba(50,50,50,0.4);
-  width: 800px;
+.btn {
+  margin-top: 100px;
 }
 
 .new-user-btns {
@@ -53,6 +36,8 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  margin-left: 100px;
+  margin-top: 400px;
   width: 800px;
   .btn {
     z-index: 100;
@@ -60,12 +45,14 @@ body {
     padding: 40px 80px !important;
     font-size: 175%;
     font-weight: bold;
+    position: absolute;
   }
   .btn-success {
     background-color: darken(#28a745, 20%) !important;
     border-color: darken(#28a745, 20%) !important;
     &:hover {
       background-color: darken(#28a745, 10%) !important;
+    position: fixed;
     }
   }
   .btn-info {
@@ -73,6 +60,7 @@ body {
     border-color: darken(rgb(23, 162, 184), 20%) !important;
     &:hover {
       background-color: darken(rgb(23, 162, 184), 10%) !important;
+      position: fixed;
     }
   }
 }
@@ -93,6 +81,7 @@ nav {
   margin-top: 25px;
 }
 
+
 .table {
   .img {
     width: 40px;
@@ -103,3 +92,4 @@ nav {
 .badge {
   font-family: sans-serif;
 }
+

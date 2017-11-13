@@ -1,0 +1,161 @@
+.home_landing {
+background-color: white;
+	height: 100vh;
+  position: fixed;
+  top: 65px;
+  width: 100vw;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fruit_top {
+    background-image: asset-url('fruit_top.png');
+    height: 100vh;
+  position: fixed;
+  top: 65px;
+  width: 100vw;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.landing_title {
+  text-align: left;
+  width: 37%;
+  margin-top: -300px;
+  margin-left: 450px;
+}
+
+/*-------------Fruit Falling-----------*/
+.grape {
+  background-image: asset-url('single_grape.png');
+   height: 100vh;
+   width: 100vh;
+   position: absolute;
+   -webkit-animation: grape 9s linear infinite;
+   animation-duration: 1.3s;
+   pointer-events: none;
+}
+
+@-webkit-keyframes grape {
+  from {transform: translate3d(0, 0, 0)}
+  to {transform: translate3d(0, 500px, 0)}
+}
+.grape1 {
+  background-image: asset-url('grape1.png');
+   height: 100vh;
+   width: 100vh;
+   position: absolute;
+   -webkit-animation: grape_one 9s linear infinite;
+   animation-duration: 1.5s;
+   pointer-events: none;
+}
+
+@-webkit-keyframes grape_one {
+  from {transform: translate3d(0, 0, 0)}
+  to {transform: translate3d(0, 530px, 0)}
+}
+.grape2 {
+  background-image: asset-url('grape2.png');
+   height: 100vh;
+   width: 100vh;
+   position: absolute;
+   -webkit-animation: grape_two 9s linear infinite;
+   animation-duration: 1.2s;
+   pointer-events: none;
+}
+
+@-webkit-keyframes grape_two {
+  from {transform: translate3d(0, 0, 0)}
+  to {transform: translate3d(0, 500px, 0)}
+}
+.grape3 {
+  background-image: asset-url('grape3.png');
+   height: 100vh;
+   width: 100vh;
+   position: absolute;
+   -webkit-animation: grape_three 9s linear infinite;
+   animation-duration: 1s;
+   pointer-events: none;
+}
+
+@-webkit-keyframes grape_three {
+  from {transform: translate3d(0, 0, 0)}
+  to {transform: translate3d(0, 500px, 0)}
+}
+.cherry {
+   background-image: asset-url('cherry.png');
+   height: 100vh;
+   width: 100vh;
+   position: absolute;
+   -webkit-animation: cherry 9s linear infinite;
+   animation-duration: 1.3s;
+   pointer-events: none;
+}
+
+@-webkit-keyframes cherry {
+  from {transform: translate3d(0, 0, 0)}
+  to {transform: translate3d(0, 600px, 0)}
+}
+
+/*.farm {
+    background-image: asset-url('farm.png');
+    height: 100vh;
+  position: fixed;
+  top: 65px;
+  width: 100vw;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}*/
+.hero-img {
+  background-image: asset-url('fruits.png');
+  height: 100vh;
+  position: fixed;
+  top: 65px;
+  width: 100vw;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*-----------white windmills-------------*/
+
+/*.windmill_white1 {
+	background-image: asset-url('white_windmill.gif');
+	margin-left: 600px;
+	margin-top: 0px;
+	height: 100vh;
+	background-repeat: no-repeat;
+	position: relative;
+}*/
+/*-----------cloud animation---------*/
+/*.home_cloud {
+  background-image: asset-url('cloud.png');
+  margin-top: -700px;
+  height: 100vh;
+  position: relative;
+   animation-name: cloud;
+   animation-duration: 270s;
+   pointer-events: none;
+}
+@-webkit-keyframes cloud {
+    0%   {left:0px; top:0px;}
+    25%  {left:1900px; top:0px;}
+}
+.cloud1 {
+  background-image: asset-url('cloud1.png');
+  margin-top: -8000px;
+  margin-left: -1000px;
+  height: 50vh;
+  position: relative;
+   animation-name: cloudone;
+   animation-duration: 312s;
+   pointer-events: none;
+}
+@-webkit-keyframes cloudone {
+    0%   {left:0px; top:0px;}
+    25%  {left:1900px; top:0px;}
+}*/
+
+.new-user-btns .btn-info {
+	margin-left: 400px;
+ }
