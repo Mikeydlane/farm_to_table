@@ -1,18 +1,14 @@
+<div class="new_product_header"><h3>Add Product</h3></div>
+
 <%= form_for @product do |f| %>
   <p>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, placeholder: "Name" %>
   </p>
 
   <p>
-    <%= f.label :price %>
-    <%= f.number_field :price %>
+    <%= f.number_field :price, placeholder: "Price" %>
   </p>
 
-  <p>
-    <%= f.label :image, 'Image URL' %>
-    <%= f.text_field :image %>
-  </p>
   <p>
     <%= f.label :description %>
     <br>

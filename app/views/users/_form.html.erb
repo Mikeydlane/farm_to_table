@@ -1,32 +1,27 @@
 <%= form_for @user do |f| %>
   <p>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, placeholder: "Name" %>
   </p>
 
   <p>
-    <%= f.label :email %>
-    <%= f.text_field :email %>
+    <%= f.text_field :email, placeholder: "Email" %>
   </p>
 
   <p>
-    <%= f.label :password %>
-    <%= f.password_field :password %>
+    <%= f.password_field :password, placeholder: "Password" %>
   </p>
 
   <p>
-    <%= f.label :city %>
-    <%= f.text_field :city %>
+    <%= f.text_field :city, placeholder: "Location" %>
   </p>
 
   <%= f.hidden_field :user_type, value: params[:user_type] %>
 
   <p>
-    <%= f.label :description %>
     <br>
-    <%= f.text_area :description %>
+    <%= f.text_area :description, placeholder: "Description" %>
   </p>
 
-  <%= f.submit %>
+  <div class="create_user_button"><%= f.submit %></div>
 
 <% end %>

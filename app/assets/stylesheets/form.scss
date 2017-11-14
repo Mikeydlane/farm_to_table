@@ -1,21 +1,51 @@
+// .form {
+//   background: white;
+//   position: relative;
+//   width: 250px;
+//   margin: auto;
+//   /*background: rgba(130,130,130,.3);*/
+//   padding: 20px 22px;
+//   border: 1px solid;
+//   border-top-color: rgba(255,255,255,.4);
+//   border-left-color: rgba(255,255,255,.4);
+//   border-bottom-color: rgba(60,60,60,.4);
+//   border-right-color: rgba(60,60,60,.4);
+//    z-index:200;
+// }
+// input {
+//   background-color: inherit;
+//   border-bottom: solid 2px;
+//   border-top: none;
+//   border-left: none;
+//   border-right: none;
+// }
+
 .form {
   background: white;
   position: relative;
-  width: 250px;
+  width: 500px;
+  height: 400px;
   margin: auto;
-  /*background: rgba(130,130,130,.3);*/
+  background: white;
   padding: 20px 22px;
   border: 1px solid;
-  border-top-color: rgba(255,255,255,.4);
+  /*border-top-color: rgba(255,255,255,.4);
   border-left-color: rgba(255,255,255,.4);
   border-bottom-color: rgba(60,60,60,.4);
-  border-right-color: rgba(60,60,60,.4);
+  border-right-color: rgba(60,60,60,.4);*/
    z-index:200;
 }
 input {
+  width: 100%;
   background-color: inherit;
   border-bottom: solid 2px;
   border-top: none;
   border-left: none;
   border-right: none;
+}
+.create_account_form {
+  h3 {
+    position: relative;
+    padding-bottom: 55px;
+  }
 }

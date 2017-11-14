@@ -1,7 +1,71 @@
-.land_foreground {
-background-image: asset-url('foreground.png');
-height: 100vh;
-margin-top: -800px;
-margin-right: -100px;
-background-repeat: no-repeat;
+.pepper_shake_right {
+	margin-top: -300px;
+}
+.pepper {
+	img {
+	position: relative;
+	margin-top: -40px;
+	margin-left: 0px;
+ }
+}
+.pepper1 {
+	img {
+	position: relative;
+	margin-top: -60px;
+	margin-left: 0px;
+	width: 17%;
+ }
+}
+.green_pepper {
+	img {
+	position: relative;
+	margin-top: -40px;
+	margin-left: 30px;
+	width: 13%;
+ }
+}
+
+.pepper_right {
+	img {
+	position: relative;
+	margin-top: -40px;
+	margin-left: 1100px;
+ }
+}
+.pepper_1_right {
+	img {
+	position: relative;
+	margin-top: -60px;
+	margin-left: 1100px;
+	width: 17%;
+ }
+}
+
+.green_pepper1 {
+	img {
+	position: relative;
+	margin-top: -60px;
+	margin-left: 1100px;
+	width: 13%;
+ }
+}
+.create_user_button {
+  border-style: solid;
+  width: 40%;
+}
+.create_account_form {
+  background: white;
+ /* position: fixed;*/
+  margin-top: -500px;
+  margin-left: 500px;
+  width: 500px;
+  /*margin: auto;*/
+  /*background: rgba(130,130,130,.3);*/
+  padding: 106px 100px;
+  border: 1px solid;
+  /*border-top-color: rgba(255,255,255,.4);
+  border-left-color: rgba(255,255,255,.4);
+  border-bottom-color: rgba(60,60,60,.4);
+  border-right-color: rgba(60,60,60,.4);*/
+   z-index:200;
 }

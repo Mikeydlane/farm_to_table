@@ -1,1 +1,29 @@
 <%= @farmer.name %>
+
+<br>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Product</th>
+      <th>Farm</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th></th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <% @farmer.products.each do |product| %>
+      <tr>
+        <td>
+          <%= image_tag product.image, class: "img" %>
+          <%= link_to product.name, product_path(product) %>
+        </td>
+        <td><%= link_to product.user.name, farmer_path(product.user) %></td>
+        <td><%= product.description %></td>
+        <td><%= number_to_currency(product.price) %></td>
+        <td><%= link_to "Add to Cart", "/cart/#{product.id}", method: 'post' %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

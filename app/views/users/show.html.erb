@@ -1,16 +1,12 @@
 <body class="profile">
 
-<div class="farm_profile">
-<% if @user.user_type == 'Farm' %>
-  <%= render partial: 'farm' %>
-<% else %>
-  <%= render partial: 'table' %>
-<% end %>
+  <div class="farm_profile">
+    <% if @user.user_type == 'Farm' %>
+      <%= render partial: 'farm' %>
+    <% else %>
+      <%= render partial: 'table' %>
+    <% end %>
 
-<%= link_to "Edit Profile", edit_user_path(current_user), class: 'btn btn-primary' %>
-</div>
-	<div class="citrus">
-		<%= image_tag("orangeslice4_parallax.png", :alt => "rss feed") %></div> 
-	</div>
+    <%= link_to "Edit Profile", edit_user_path(current_user), class: 'btn btn-primary' %>
+  </div>
 </body>
-
