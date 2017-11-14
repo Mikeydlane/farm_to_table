@@ -1,0 +1,13 @@
+
+<%= @invoice.id %>
+<% @invoice.orders.each do |order| %>
+  <% order.order_products.each do |order_product| %>
+    <% product = Product.find(order_product.product.id) %>
+    <%= product.name %>
+    <%= number_to_currency(product.price) %>
+    <%= order_product.quantity %>
+    <%= number_to_currency(order_product.amount) %>
+    <hr>
+  <% end %>
+<% end %>
+<%= number_to_currency(@invoice.total) %>

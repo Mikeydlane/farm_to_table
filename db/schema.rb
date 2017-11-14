@@ -10,7 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171107093841) do
+ActiveRecord::Schema.define(version: 20171114050305) do
+
+  create_table "invoice_orders", force: :cascade do |t|
+    t.integer "invoice_id"
+    t.integer "order_id"
+    t.index ["invoice_id"], name: "index_invoice_orders_on_invoice_id"
+    t.index ["order_id"], name: "index_invoice_orders_on_order_id"
+  end
+
+  create_table "invoices", force: :cascade do |t|
+    t.float "total"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.index ["user_id"], name: "index_invoices_on_user_id"
+  end
 
   create_table "order_products", force: :cascade do |t|
     t.integer "product_id"
@@ -18,6 +33,7 @@ ActiveRecord::Schema.define(version: 20171107093841) do
     t.float "amount"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "quantity"
     t.index ["order_id"], name: "index_order_products_on_order_id"
     t.index ["product_id"], name: "index_order_products_on_product_id"
   end

@@ -1,8 +1,29 @@
- <canvas id="bgCanvas"></canvas>
- <div class="farm_create">
-<h3>Create Account</h3>
 
-<div class="form"><%= render partial: 'form' %></div>
-<div class="land_foreground"></div>
+<canvas id="bgCanvas"></canvas>
+<div class="farm_create">
+ <div class="pepper_shake_left">
+   <div class="pepper">
+     <%= image_tag("red_pepper.png", :alt => "rss feed") %></div>
+   </div>
+   <div class="pepper1">
+     <%= image_tag("red_pepper.png", :alt => "rss feed") %></div>
+   </div>
+   <div class="green_pepper">
+     <%= image_tag("green_pepper.png", :alt => "rss feed") %></div>
+   </div>
+ </div>
+ <!---right side-->
+ <div class="pepper_shake_right">
+   <div class="pepper_right">
+     <%= image_tag("red_pepper1.png", :alt => "rss feed") %></div>
+   </div>
+   <div class="pepper_1_right">
+     <%= image_tag("red_pepper1.png", :alt => "rss feed") %></div>
+   </div>
+   <div class="green_pepper1">
+     <%= image_tag("green_pepper1.png", :alt => "rss feed") %></div>
+ </div>
 </div>
-
+<div class="create_account_form"><h3>Create Account</h3>
+<%= render partial: 'form' %></div>
+<div class="land_foreground"></div>

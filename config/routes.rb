@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'pages/about'
+
 
   get 'pages/contact'
 
@@ -12,6 +12,10 @@ Rails.application.routes.draw do
   get '/farmers/:id', to: 'farmers#show', as: 'farmer'
   post '/cart/:id', to: 'cart#add'
   get '/cart', to: 'cart#index'
+  get '/checkout', to: 'cart#checkout'
+  get '/about', to: 'pages#about'
+
+  resources :invoices, only: [:show, :index]
   resources :users, only: [:create, :new, :show, :edit, :update]
   resources :products
 end

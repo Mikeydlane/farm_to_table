@@ -1,0 +1,6 @@
+<h2>Past Orders</h2>
+<ul>
+  <% @invoices.each do |invoice| %>
+    <li><%= link_to "Invoice ID: #{invoice.id}", invoice_path(invoice) %> - <%= invoice.total %></li>
+  <% end %>
+</ul>
