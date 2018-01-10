@@ -13,7 +13,7 @@
     <% @products.each do |product| %>
       <tr>
         <td>
-          <%= image_tag product.image, class: "img" %>
+          <%= image_tag product.image, class: "img" if product.image %>
           <%= link_to product.name, product_path(product) %>
         </td>
         <td><%= link_to product.user.name, farmer_path(product.user) %></td>
