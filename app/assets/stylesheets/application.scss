@@ -36,9 +36,9 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin-left: 100px;
-  margin-top: 400px;
-  width: 800px;
+  margin-left: 130px;
+  margin-top: 410px;
+  width: 790px;
   .btn {
     z-index: 100;
     opacity: 1 !important;
@@ -46,6 +46,7 @@ body {
     font-size: 175%;
     font-weight: bold;
     position: absolute;
+    margin-top: 38px;
   }
   .btn-success {
     background-color: darken(#28a745, 20%) !important;
