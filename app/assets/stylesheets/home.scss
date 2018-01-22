@@ -1,16 +1,17 @@
 .home_landing {
-background-color: white;
+	background-color: white;
+	background-image: asset-url("f2t.jpg");
 	height: 100vh;
-  position: fixed;
-  top: 65px;
-  width: 100vw;
-  left: 0;
-  background-repeat: no-repeat;
-  background-size: cover;
+	position: fixed;
+	top: 65px;
+	width: 100vw;
+	left: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .fruit_top {
-    background-image: asset-url('fruit_top.png');
-    height: 100vh;
+  background-image: asset-url('fruit_top.png');
+  height: 100vh;
   position: fixed;
   top: 65px;
   width: 100vw;
@@ -19,10 +20,18 @@ background-color: white;
   background-size: cover;
 }
 .landing_title {
-  text-align: left;
-  width: 37%;
+
+
+  width: 40%;
   margin-top: -300px;
-  margin-left: 450px;
+	color: white;
+	text-align: center;
+	margin: -300px auto 0;
+	font-weight: 600;
+}
+
+.landing_title h4{
+	font-weight: 600;
 }
 
 /*-------------Fruit Falling-----------*/
